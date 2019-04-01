@@ -1,10 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -41,8 +39,9 @@ class PagesMenu extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-          <MenuItem component={Link} to='/resume' onClick={this.handleClose}>Resume</MenuItem>
           <MenuItem component={Link} to='/' onClick={this.handleClose}>About Me</MenuItem>
+          <MenuItem component={Link} to='/resume' onClick={this.handleClose}>Resume</MenuItem>
+          <MenuItem component={Link} to='/projects' onClick={this.handleClose}>Projects</MenuItem>
         </Menu>
       </div>
     );

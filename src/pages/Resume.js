@@ -24,22 +24,21 @@ export class ResumePage extends Component {
   render() {
     return (
       <div className={this.props.root}>
-            <Grid className="App"
-                  container spacing={24} 
-                  alignItems="center"
-                  justify="center">
+        <Grid className="App"
+              container spacing={24} 
+              alignItems="center"
+              justify="center">
 
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-                <Grid item xs={12}>
-                  <Paper className={this.props.paper}> <ButtonAppBar currentPage="Resume"/></Paper>
-                </Grid>
-                <Grid item xs={12}>
-                  <Paper className={this.props.paper}> <Experience /> </Paper>
-                </Grid>
-            </header>
-
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+              <Grid item xs={12}>
+                <Paper className={this.props.paper}> <ButtonAppBar currentPage="Resume"/></Paper>
               </Grid>
+              <Grid item xs={12}>
+                <Paper className={this.props.paper}> <Experience /> </Paper>
+              </Grid>
+          </header>
+        </Grid>
       </div>
     );
   }

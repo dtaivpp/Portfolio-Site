@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import AboutPage from './pages/About'
 import ResumePage from './pages/Resume'
+import ProjectPage from './pages/Project'
 import * as serviceWorker from './serviceWorker';
 
 class RouterNavigation extends React.Component {
@@ -14,6 +15,7 @@ class RouterNavigation extends React.Component {
         <>
           <Route exact path="/" component={AboutPage} />
           <Route path="/resume" component={ResumePage} />
+          <Route path="/projects" component={ProjectPage} />
         </>
       </Router>
     );
